@@ -1,0 +1,4 @@
+function extractIds(data){
+  var myJSON = JSON.stringify(data);  
+  return myJSON.replace(/\D/g, '').split('').map(a=> parseInt(a)); 
+}
