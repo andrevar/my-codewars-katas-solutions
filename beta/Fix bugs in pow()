@@ -1,0 +1,7 @@
+function pow(n, p){
+		var res = 1;
+    for (let x = 0; x < p; x++) {
+        res *= n;
+    }
+    return res;
+}
