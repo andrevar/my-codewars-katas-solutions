@@ -1,0 +1,8 @@
+def doubles(s)
+    n = s.length
+    s = s.gsub(/(.)\1/, '')
+    if s.length == n
+        return s
+    end
+    doubles(s)
+end
